@@ -1,0 +1,25 @@
+BillingCountry,BillingCity,FirstName,LastName,amount_of_invoices
+USA,Madison,Victor,Stevens,91
+Canada,Toronto,Robert,Brown,56
+Brazil,Rio de Janeiro,Roberto,Almeida,35
+France,Bordeaux,Wyatt,Girard,35
+Germany,Frankfurt,Fynn,Zimmermann,28
+United Kingdom,Edinburgh ,Steve,Murray,21
+Czech Republic,Prague,Helena,Holý,14
+Portugal,Porto,Madalena,Sampaio,14
+India,Delhi,Manoj,Pareek,13
+Argentina,Buenos Aires,Diego,Gutiérrez,7
+Australia,Sidney,Mark,Taylor,7
+Austria,Vienne,Astrid,Gruber,7
+Belgium,Brussels,Daan,Peeters,7
+Chile,Santiago,Luis,Rojas,7
+Denmark,Copenhagen,Kara,Nielsen,7
+Finland,Helsinki,Terhi,Hämäläinen,7
+Hungary,Budapest,Ladislav,Kovács,7
+Ireland,Dublin,Hugh,O'Reilly,7
+Italy,Rome,Lucas,Mancini,7
+Netherlands,Amsterdam,Johannes,Van der Berg,7
+Norway,Oslo,Bjørn,Hansen,7
+Poland,Warsaw,Stanisław,Wójcik,7
+Spain,Madrid,Enrique,Muñoz,7
+Sweden,Stockholm,Joakim,Johansson,7
