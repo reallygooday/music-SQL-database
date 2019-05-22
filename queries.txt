@@ -1,0 +1,51 @@
+/*
+Student: Andzelika Balyseviene
+Date: 23 December 2018
+Project: Query a Digital Music Store Database 
+Total: 4 QUERIES
+*/
+
+
+
+-- Query 1 "Amount Of Invoices":
+SELECT BillingCountry, BillingCity, c.FirstName, c.LastName, COUNT (*) AS  amount_of_invoices
+FROM Invoice i
+JOIN Customer c
+ON i.CustomerId = c.CustomerId
+GROUP BY BillingCountry
+ORDER BY amount_of_invoices desc;
+
+
+
+--Query 2 "Genre Frequency":
+SELECT g.Name, Count(*) AS frequency
+FROM Genre g
+INNER JOIN Track t
+ON g.GenreId = t.GenreId
+group BY g.Name
+order BY 2 desc;
+
+
+
+--Query 3 "Exploring Media Types Pricing":
+SELECT t.UnitPrice,t.MediaTypeId,m.Name, COUNT(t.MediaTypeId) AS amount_of_files, group_concat(t.Name) AS list_of_songs
+FROM Track t
+JOIN MediaType m
+ON t.MediaTypeId = m.MediaTypeId
+GROUP BY m.Name
+ORDER BY UnitPrice desc;
+
+
+
+--Query 4 "The Top Ten Customers":
+SELECT BillingCity, BillingCountry, c.FirstName, c.LastName, sum(total) AS sum_of_totals
+FROM Invoice i
+JOIN Customer c
+ON i.CustomerId = c.CustomerId
+GROUP BY c.FirstName
+order BY 5 desc
+limit 10;
+
+
+
+
